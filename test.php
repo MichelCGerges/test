@@ -16,7 +16,7 @@
         CURLOPT_POSTFIELDS => " { \"name\": ". $name . ",\n  \"active\": true,\n  \"events\": [\n    \"push\",\n    \"pull_request\"\n  ],\n  \"config\": {\n    \"url\": \"http://example.com/webhook\",\n    \"content_type\": \"json\"\n  }\n }",
         CURLOPT_HTTPHEADER => array(
             "User-Agent: user"
-        ),
+        ),asd
     ));
 
     $response = curl_exec($curl);
